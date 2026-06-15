@@ -16,6 +16,21 @@ Java, JavaScript, Python, SQL, Angular and basic C++.
 - Interested in software architecture, system integration and maintainable code
 - Exchange semester at Griffith University in Australia
 
+## Professional experience
+
+Through my sole proprietorship, Rønningen Interactive, I collaborate with
+Helse Vest IKT on the development and continued improvement of a VR dashboard
+application for Energisenteret for barn og unge at Haukeland University Hospital.
+
+My work includes:
+
+- Development in C#, .NET and WPF
+- MVVM architecture and application structure
+- Integration with SteamVR and OpenVR
+- Debugging and improvement of existing functionality
+- Adapting the application to real user needs
+- Communication and coordination with the client
+
 ## Technologies
 
 **Languages**
