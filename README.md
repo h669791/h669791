@@ -1,16 +1,64 @@
-## Hi there 👋
+# Hi, I'm Jonas Rønningen 👋
 
-<!--
-**h669791/h669791** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Software developer with a background in Computer Engineering and practical
+experience developing user-focused applications and system integrations.
 
-Here are some ideas to get you started:
+I primarily work with C#, .NET and WPF/MVVM, and I also have experience with
+Java, JavaScript, Python, SQL, Angular and basic C++.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## About me
+
+- Based in Bergen, Norway
+- Computer Engineering studies at Western Norway University of Applied Sciences
+- Practical development experience through my own company
+- Developed and continued working on a VR dashboard solution for
+  Helse Vest IKT and Haukeland University Hospital
+- Interested in software architecture, system integration and maintainable code
+- Exchange semester at Griffith University in Australia
+
+## Technologies
+
+**Languages**
+
+C# · Java · JavaScript · Python · SQL · C++ fundamentals
+
+**Frameworks and technologies**
+
+.NET · WPF · MVVM · Angular · REST APIs · SteamVR · OpenVR
+
+**Tools and practices**
+
+Git · GitHub · Visual Studio · VS Code · Debugging · Testing · Documentation
+
+## Featured project
+
+### VR Dashboard for Healthcare
+
+A desktop application designed to make VR systems easier to operate for
+healthcare personnel without extensive technical experience.
+
+The project included:
+
+- Development with C#, .NET and WPF
+- MVVM architecture and separation of responsibilities
+- SteamVR and OpenVR integration
+- Game library and profile management
+- VR equipment and application status
+- Error handling, debugging and usability improvements
+- Continued development through a commercial assignment
+
+## What I value
+
+I aim to build software that is understandable, maintainable and useful.
+
+## Currently learning
+
+- Improving MVVM architecture and application structure
+- C#
+- Testing and maintainable software design
+- Cloud technologies and deployment
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/jonas-r-a5428a132/
+- Email: jonas-the@hotmail.com
