@@ -47,7 +47,7 @@ Git · GitHub · Visual Studio · VS Code · Debugging · Testing · Documentati
 
 ## Featured project
 
-### VR Dashboard for Healthcare
+### VR Dashboard for Helse Vest IKT Bergen
 
 A desktop application designed to make VR systems easier to operate for
 healthcare personnel without extensive technical experience.
