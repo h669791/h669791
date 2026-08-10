@@ -62,6 +62,10 @@ The project included:
 - Error handling, debugging and usability improvements
 - Continued development through a commercial assignment
 
+<p align="center">
+  <img src="VRDashboard.png" width="49%" />
+</p>
+
 ## What I value
 
 I aim to build software that is understandable, maintainable and useful.
