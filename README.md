@@ -63,7 +63,7 @@ The project included:
 - Continued development through a commercial assignment
 
 <p align="center">
-  <img src="VRDashboard.png" width="49%" />
+  <img src="/VRDashboard.png" width="49%" />
 </p>
 
 ## What I value
