@@ -8,7 +8,7 @@ Java, JavaScript, Python, SQL, Angular and basic C++.
 
 ## About me
 
-- Based in Bergen, Norway
+- Based in Vinstra, Norway
 - Computer Engineering studies at Western Norway University of Applied Sciences
 - Practical development experience through my own company
 - Developed and continued working on a VR dashboard solution for
