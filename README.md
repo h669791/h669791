@@ -68,10 +68,26 @@ The project included:
 
 ## Personal projects
 
-**[adsb-pipeline](https://github.com/h669791/adsb-pipeline)**: sanntidskart over fly basert på ADS-B-signaler.
-Backend i TypeScript (Fastify, WebSocket) og et React/MapLibre-kart med spor og en usikkerhetssirkel
-som vokser med posisjonens alder.
-Status: Kjeden fungerer med testdata. Neste steg er ekte mottak med RTL-SDR og readsb på en Raspberry Pi.
+### [adsb-pipeline](https://github.com/h669791/adsb-pipeline)
+
+A self-initiated project to learn the chain from a passive radio receiver to a live operator map,
+using real-time aircraft positions from ADS-B signals.
+
+**Stack:** TypeScript · Node.js · Fastify · WebSocket · React · Vite · MapLibre GL JS
+
+**Next:** RTL-SDR · readsb · Raspberry Pi
+
+- **Real-time pipeline:** the backend reads readsb's `aircraft.json` every second and pushes snapshots
+  to the browser over WebSocket, with automatic reconnect and backoff.
+- **Validation at the boundary:** raw data is treated as `unknown`, validated and normalized into a typed
+  `Observation`. Unknown values stay `null` instead of becoming 0.
+- **Honest about uncertainty:** markers fade and an uncertainty circle grows with position age
+  (speed × age), so stale positions never look fresh.
+- **Clock-aware timestamps:** sensor time and receive time are kept separate, and position age is
+  measured on a single clock.
+
+**Status:** Works end-to-end with test data. Next step is live reception with an RTL-SDR dongle on a
+Raspberry Pi. readsb handles the signal processing; I built the rest of the chain.
 
 
 ## What I value
