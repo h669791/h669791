@@ -66,6 +66,14 @@ The project included:
   <img src="/VRDashboard_Main.png" width="49%" />
 </p>
 
+## Under arbeid
+
+**[adsb-pipeline](https://github.com/h669791/adsb-pipeline)**: sanntidskart over fly basert på ADS-B-signaler.
+Backend i TypeScript (Fastify, WebSocket) og et React/MapLibre-kart med spor og en usikkerhetssirkel
+som vokser med posisjonens alder.
+Status: Kjeden fungerer med testdata. Neste steg er ekte mottak med RTL-SDR og readsb på en Raspberry Pi.
+
+
 ## What I value
 
 I aim to build software that is understandable, maintainable and useful.
