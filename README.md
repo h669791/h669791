@@ -89,6 +89,22 @@ using real-time aircraft positions from ADS-B signals.
 **Status:** Works end-to-end with test data. Next step is live reception with an RTL-SDR dongle on a
 Raspberry Pi. readsb handles the signal processing; I built the rest of the chain.
 
+### [DeviceHub](https://github.com/h669791/devicehub)
+A backend platform for managing and monitoring simulated VR headsets. Inspired by my work on a VR dashboard for Helse Vest IKT, but written from scratch on my own time, using simulated data only.
+
+**Stack:** C# · ASP.NET Core Web API · Entity Framework Core · PostgreSQL · Docker
+
+**Built so far**
+- REST API with full CRUD for headsets, using DTOs to separate the API contract from the database model
+- Input validation, plus 404 and 409 Conflict handling for missing resources and duplicate serial numbers
+- PostgreSQL running in Docker, with schema managed through EF Core migrations
+
+**Roadmap**
+- Sessions and experiences with business rules (e.g. a headset must be online to start a session)
+- Live status updates with SignalR and a React/TypeScript frontend
+- xUnit tests and CI with GitHub Actions
+- A headset simulator in Kotlin/Spring Boot that sends status messages to the API through a message queue
+
 
 ## What I value
 
