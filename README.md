@@ -1,123 +1,55 @@
 # Hi, I'm Jonas Rønningen 👋
 
-Software developer with a background in Computer Engineering and practical
-experience developing user-focused applications and system integrations.
+Software developer from Vinstra, Norway. I built and delivered a production desktop application for Helse Vest IKT, carrying it alone from bachelor project to handover. Now I build web backends and real-time data pipelines on my own time, and I'm looking for a full-time developer role.
 
-I primarily work with C#, .NET and WPF/MVVM, and I also have experience with
-Java, JavaScript, Python, SQL, Angular and basic C++.
+- BSc in Computer Engineering, Western Norway University of Applied Sciences (HVL). One course left, exam January 2027.
+- Exchange semester at Griffith University, Australia (2024), taught in English.
+- [LinkedIn](https://www.linkedin.com/in/jonas-r-a5428a132/) · jonas-the@hotmail.com
 
-## About me
+## Production work: VR Dashboard for Helse Vest IKT
 
-- Based in Vinstra, Norway
-- Computer Engineering studies at Western Norway University of Applied Sciences
-- Practical development experience through my own company
-- Developed and continued working on a VR dashboard solution for
-  Helse Vest IKT and Haukeland University Hospital
-- Interested in software architecture, system integration and maintainable code
-- Exchange semester at Griffith University in Australia
+**Rønningen Interactive (own company) · Jan 2025 – Jul 2026**
 
-## Professional experience
+A desktop application that lets healthcare staff without a technical background run the VR equipment at Energisenteret for barn og unge, Haukeland University Hospital: device status, Wi-Fi, audio, applications and profiles.
 
-Through my sole proprietorship, Rønningen Interactive, I collaborate with
-Helse Vest IKT on the development and continued improvement of a VR dashboard
-application for Energisenteret for barn og unge at Haukeland University Hospital.
+- Started as my bachelor project in a team of four (Jan–Jun 2025). I then continued it alone as a paid assignment until handover in July 2026.
+- Gathered requirements with healthcare staff and turned them into features.
+- C#/.NET, WPF and MVVM, integrated with SteamVR, OpenVR and the connected VR hardware.
+- Refactored toward a clear split between views, ViewModels and services.
+- Owned technical decisions, testing, documentation and delivery in a regulated healthcare environment.
+- **Outcome:** in production since late summer 2026. Helse Vest IKT now develops it further themselves, based on the code and documentation I handed over.
 
-My work includes:
+The bachelor thesis (in Norwegian) is published in [Nasjonalt vitenarkiv](https://nva.sikt.no/registration/01990ef7e798-5689216a-c6c0-482f-bbf8-f312c5d483e3).
 
-- Development in C#, .NET and WPF
-- MVVM architecture and application structure
-- Integration with SteamVR and OpenVR
-- Debugging and improvement of existing functionality
-- Adapting the application to real user needs
-- Communication and coordination with the client
-
-## Technologies
-
-**Languages**
-
-C# · Java · JavaScript · Python · SQL · C++ fundamentals
-
-**Frameworks and technologies**
-
-.NET · WPF · MVVM · Angular · REST APIs · SteamVR · OpenVR
-
-**Tools and practices**
-
-Git · GitHub · Visual Studio · VS Code · Debugging · Testing · Documentation
-
-## Featured project
-
-### VR Dashboard for Helse Vest IKT Bergen
-
-A desktop application designed to make VR systems easier to operate for
-healthcare personnel without extensive technical experience.
-
-The project included:
-
-- Development with C#, .NET and WPF
-- MVVM architecture and separation of responsibilities
-- SteamVR and OpenVR integration
-- Game library and profile management
-- VR equipment and application status
-- Error handling, debugging and usability improvements
-- Continued development through a commercial assignment
-
-<p align="center">
-  <img src="/VRDashboard_Main.png" width="49%" />
-</p>
+![VR Dashboard main view](VRDashboard_Main.png)
 
 ## Personal projects
 
-### [adsb-pipeline](https://github.com/h669791/adsb-pipeline)
+### [adsb-pipeline](https://github.com/h669791/adsb-pipeline): live aircraft map from ADS-B data
 
-A self-initiated project to learn the chain from a passive radio receiver to a live operator map,
-using real-time aircraft positions from ADS-B signals.
+`TypeScript` `Node.js` `Fastify` `WebSocket` `React` `MapLibre GL JS`
 
-**Stack:** TypeScript · Node.js · Fastify · WebSocket · React · Vite · MapLibre GL JS
+Takes the aircraft feed from a radio receiver and turns it into a live operator map. Raw data is validated and normalized at the boundary, so unknown values stay `null` instead of becoming 0. Stale positions fade and get a growing uncertainty circle, so old data never looks fresh.
 
-**Next:** RTL-SDR · readsb · Raspberry Pi
+**Status:** works end to end with test data. Next step is live reception with an RTL-SDR dongle on a Raspberry Pi.
 
-- **Real-time pipeline:** the backend reads readsb's `aircraft.json` every second and pushes snapshots
-  to the browser over WebSocket, with automatic reconnect and backoff.
-- **Validation at the boundary:** raw data is treated as `unknown`, validated and normalized into a typed
-  `Observation`. Unknown values stay `null` instead of becoming 0.
-- **Honest about uncertainty:** markers fade and an uncertainty circle grows with position age
-  (speed × age), so stale positions never look fresh.
-- **Clock-aware timestamps:** sensor time and receive time are kept separate, and position age is
-  measured on a single clock.
+### [DeviceHub](https://github.com/h669791/devicehub): REST API for managing simulated VR headsets
 
-**Status:** Works end-to-end with test data. Next step is live reception with an RTL-SDR dongle on a
-Raspberry Pi. readsb handles the signal processing; I built the rest of the chain.
+`C#` `ASP.NET Core` `Entity Framework Core` `PostgreSQL` `Docker`
 
-### [DeviceHub](https://github.com/h669791/devicehub)
-A backend platform for managing and monitoring simulated VR headsets. Inspired by my work on a VR dashboard for Helse Vest IKT, but written from scratch on my own time, using simulated data only.
+Written from scratch on my own time, using simulated data only.
 
-**Stack:** C# · ASP.NET Core Web API · Entity Framework Core · PostgreSQL · Docker
+- REST API with CRUD, DTOs that separate the API contract from the database model, input validation and 404/409 handling.
+- PostgreSQL in Docker, with the schema managed through EF Core migrations.
 
-**Built so far**
-- REST API with full CRUD for headsets, using DTOs to separate the API contract from the database model
-- Input validation, plus 404 and 409 Conflict handling for missing resources and duplicate serial numbers
-- PostgreSQL running in Docker, with schema managed through EF Core migrations
+**Next:** sessions with business rules, live status with SignalR and a React frontend, xUnit tests and CI with GitHub Actions.
 
-**Roadmap**
-- Sessions and experiences with business rules (e.g. a headset must be online to start a session)
-- Live status updates with SignalR and a React/TypeScript frontend
-- xUnit tests and CI with GitHub Actions
-- A headset simulator in Kotlin/Spring Boot that sends status messages to the API through a message queue
+## Tech
 
+| Where I've used it | Technologies |
+| --- | --- |
+| Production | C#, .NET, WPF, MVVM, SteamVR/OpenVR, hardware integration |
+| Personal projects | ASP.NET Core, EF Core, PostgreSQL, Docker, TypeScript, React, Node.js |
+| Coursework | Java, Spring MVC, JPA, Angular, Python, SQL, C++ |
 
-## What I value
-
-I aim to build software that is understandable, maintainable and useful.
-
-## Currently learning
-
-- Improving MVVM architecture and application structure
-- C#
-- Testing and maintainable software design
-- Cloud technologies and deployment
-
-## Contact
-
-- LinkedIn: https://www.linkedin.com/in/jonas-r-a5428a132/
-- Email: jonas-the@hotmail.com
+Tools: Git, GitHub, Visual Studio, VS Code.
